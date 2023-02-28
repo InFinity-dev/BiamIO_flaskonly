@@ -1,0 +1,154 @@
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  /*height: 100%;*/
+  overflow: hidden;
+}
+canvas {
+  z-index: -1;
+  display: flex;
+  position: absolute;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1323;
+  color: white;
+}
+main {
+  width: 1850px;
+  height: 1000px;
+  display: flex;
+  gap: 30px;
+}
+.wrapper{
+  position: absolute;
+  top: 30px;
+  right : 510px;
+}
+.accordion{
+  position: absolute;
+  left:0;
+  right:0;
+}
+.draggable {
+  cursor: move;
+}
+.handle {
+  cursor: pointer;
+}
+.accordion-item {
+  width: 400px;
+}
+.left-container {
+  width: 20%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: #1D204B;
+  margin: auto;
+}
+
+.left-top-section {
+  height: 70%;
+  /*padding-left: 30px;*/
+  border-radius: 16px;
+  background-color: #5746EA;
+}
+
+.left-bottom-section {
+}
+
+.right-container {
+  width: 80%;
+  height: 100%;
+  /*background-color: #5746EA;*/
+  border-radius: 16px;
+  margin: auto;
+}
+
+.gamesection-container {
+  min-width: 1280px;
+  width: 1280px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.cam-conatiner {
+}
+
+.hud-top {
+  font-size: xx-large;
+}
+
+.myscore {
+  width: 33%;
+  display: inline-block;
+  float: left;
+}
+
+.opponentscore {
+  width: 33%;
+  display: inline-block;
+  float: left;
+}
+
+.timer {
+  width: 33%;
+  display: inline-block;
+}
+
+.camfeed {
+  border-radius: 16px;
+  width: 1280px;
+  height: 720px;
+}
+
+/* ambient */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ambient {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  --size: 1000px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  filter: blur(calc(var(--size) / 5));
+  /*background-image: linear-gradient(rgba(55, 235, 169, 0.85), #5b37eb);*/
+  /*animation: rotate var(--speed) var(--easing) alternate infinite;*/
+  /*background-image: linear-gradient(rgba(55, 235, 169, 0.85), #5b37eb);*/
+  /*background-color: rgb(255,0,0);*/
+  background-color: rgb(0, 255, 0);
+  z-index: -1;
+  transition: all 0.5s ease-out;
+}
+
+.ambient {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  --size: 1000px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  filter: blur(calc(var(--size) / 5));
+  background-color: rgb(0, 255, 0);
+  z-index: -1;
+  transition: all 0.5s ease-out;
+}
+
+background-color: rgb(255, 0, 0);
